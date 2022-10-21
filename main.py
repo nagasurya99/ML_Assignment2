@@ -1,3 +1,5 @@
+#Program 1
+
 import numpy as np
 array1 = np.random.randint(1, 20, 15)  # declaring array of size 15 and declaring range
 print(array1)  # printing array
@@ -9,6 +11,8 @@ max = max[:, None]
 array3 = np.where(array2 == max, 0, array2)  # replacing max element with zero
 print(array3)  # printing final array
 
+
+# Program2
 import pandas as pd
 
 data = pd.read_csv("C:/Users/nagas/Downloads/data.csv")  # reading csv file
@@ -25,6 +29,8 @@ print(data.head())
 data['Calories'] = data['Calories'].astype("int")
 print(data['Calories'].dtypes)
 data.plot.scatter(x='Duration', y='Calories')  # printing plot
+
+#Program3
 
 import matplotlib.pyplot as plt
 
